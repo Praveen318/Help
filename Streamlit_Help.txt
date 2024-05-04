@@ -1,0 +1,14 @@
+!pip install -q streamlit
+
+%%writefile app.py
+
+import streamlit as st
+
+st.write('Hello, *World!* :sunglasses:')
+
+!npm install -g localtunnel!streamlit run app.py &>/content/logs.txt &
+
+import urllib
+print("Password/Enpoint IP for localtunnel is:",urllib.request.urlopen('https://ipv4.icanhazip.com').read().decode('utf8').strip("\n"))
+
+!npx localtunnel --port 8501

@@ -1,0 +1,29 @@
+If some file are larger than 100MB then
+install git lfs
+
+Go to the folder using command prompt then run below command
+git lfs uninstall
+git lfs install
+
+git init
+
+if many with same extension is large then do like in example
+E.g
+if extension of the files are .iso
+git lfs track "*.iso"
+if any particular file model_state.pt is in the floder LoadingModel_Deployement_Scoring_Ranking of the floder i want to upload to github
+git lfs track "LoadingModel_Deployement_Scoring_Ranking/model_state.pt"
+
+git add --all
+
+git commit -m "message"
+
+git branch -M main
+
+please add your own path of respository of github
+git remote add origin https://github.com/Praveen318/NTU-AY23-24.git
+
+git push -u origin main
+
+to download the repository
+git clone https://github.com/username/repository.git
